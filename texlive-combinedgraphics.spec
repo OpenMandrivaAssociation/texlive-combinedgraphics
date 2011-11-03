@@ -1,5 +1,11 @@
+# revision 23356
+# category Package
+# catalog-ctan /macros/latex/contrib/combinedgraphics
+# catalog-date 2011-06-15 09:17:18 +0200
+# catalog-license gpl
+# catalog-version 0.1.1-alpha
 Name:		texlive-combinedgraphics
-Version:	0.1.1.alpha
+Version:	0.1.1-alpha
 Release:	1
 Summary:	Include graphic (EPS or PDF)/LaTeX combinations
 Group:		Publishing
@@ -66,6 +72,7 @@ graphicx package).
 #- source
 %doc %{_texmfdistdir}/source/latex/combinedgraphics/combinedgraphics.dtx
 %doc %{_texmfdistdir}/source/latex/combinedgraphics/combinedgraphics.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -76,3 +83,5 @@ graphicx package).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
