@@ -5,7 +5,7 @@
 # catalog-license gpl
 # catalog-version 0.1.1-alpha
 Name:		texlive-combinedgraphics
-Version:	0.1.1-alpha
+Version:	0.1.1alpha
 Release:	1
 Summary:	Include graphic (EPS or PDF)/LaTeX combinations
 Group:		Publishing
