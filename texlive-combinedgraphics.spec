@@ -6,7 +6,7 @@
 # catalog-version 0.1.1-alpha
 Name:		texlive-combinedgraphics
 Version:	0.1.1alpha
-Release:	1
+Release:	2
 Summary:	Include graphic (EPS or PDF)/LaTeX combinations
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/combinedgraphics
