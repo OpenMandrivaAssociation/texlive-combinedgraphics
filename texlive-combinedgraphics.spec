@@ -1,12 +1,12 @@
-# revision 23356
+# revision 27198
 # category Package
 # catalog-ctan /macros/latex/contrib/combinedgraphics
-# catalog-date 2011-06-15 09:17:18 +0200
+# catalog-date 2012-07-16 18:35:20 +0200
 # catalog-license gpl
-# catalog-version 0.1.1-alpha
+# catalog-version 0.2.2
 Name:		texlive-combinedgraphics
-Version:	0.1.1alpha
-Release:	2
+Version:	0.2.2
+Release:	1
 Summary:	Include graphic (EPS or PDF)/LaTeX combinations
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/combinedgraphics
