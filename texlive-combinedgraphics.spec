@@ -6,7 +6,7 @@
 # catalog-version 0.2.2
 Name:		texlive-combinedgraphics
 Version:	0.2.2
-Release:	2
+Release:	3
 Summary:	Include graphic (EPS or PDF)/LaTeX combinations
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/combinedgraphics
