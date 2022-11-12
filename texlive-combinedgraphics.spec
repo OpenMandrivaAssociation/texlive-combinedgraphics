@@ -1,19 +1,13 @@
-# revision 27198
-# category Package
-# catalog-ctan /macros/latex/contrib/combinedgraphics
-# catalog-date 2012-07-16 18:35:20 +0200
-# catalog-license gpl
-# catalog-version 0.2.2
 Name:		texlive-combinedgraphics
-Version:	0.2.2
-Release:	11
+Version:	27198
+Release:	1
 Summary:	Include graphic (EPS or PDF)/LaTeX combinations
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/combinedgraphics
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combinedgraphics.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combinedgraphics.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combinedgraphics.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combinedgraphics.r27198.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combinedgraphics.doc.r27198.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combinedgraphics.source.r27198.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -34,12 +28,12 @@ complete graphics (similar to \includegraphics from the
 graphicx package).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -65,29 +59,11 @@ graphicx package).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.2.2-1
-+ Revision: 812144
-- Update to latest release.
-
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1.1alpha-2
-+ Revision: 750390
-- Rebuild to reduce used resources
-
-* Sun Nov 06 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.1.1alpha-1
-+ Revision: 722998
-- texlive-combinedgraphics
-- texlive-combinedgraphics
-- texlive-combinedgraphics
-- texlive-combinedgraphics
-- texlive-combinedgraphics
-
