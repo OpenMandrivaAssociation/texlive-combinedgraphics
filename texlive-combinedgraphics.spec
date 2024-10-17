@@ -3,7 +3,7 @@ Version:	27198
 Release:	2
 Summary:	Include graphic (EPS or PDF)/LaTeX combinations
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/combinedgraphics
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/combinedgraphics
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combinedgraphics.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combinedgraphics.doc.r%{version}.tar.xz
